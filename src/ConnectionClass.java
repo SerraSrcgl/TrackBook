@@ -10,8 +10,8 @@ public class ConnectionClass {
     public static Connection getConnection() {
         Connection con = null;
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/loginandregister", "root", "");
+            Class.forName("/Users/serra/Library/Application Support/JetBrains/IntelliJIdea2020.2/consoles/db/4798cac1-7fdd-4a28-96ff-bd24d46b25fd/console.sql");
+            con = DriverManager.getConnection("jdbc:oracle:thin:@db-oracle.pjwstk.edu.pl:1521:baza", "s19687", "");
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
