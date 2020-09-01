@@ -22,6 +22,10 @@ public class Book {
         this.category = category;
     }
 
+    public Book(int id, String name, String surname, String email, String password) {
+
+    }
+
     public String getName() {
         return name;
     }
@@ -128,8 +132,7 @@ public class Book {
     static void usingPath() throws IOException {
         Path path1 = Paths.get("/Users/serra/IntelliJIDEAProjects/TrackBook/src/RegisteredUser");
         Path path = Paths.get("/Users/serra/IntelliJIDEAProjects/TrackBook/src/Accounts");
-        Files.write(path1, path, StandardOpenOption.APPEND);  //Append mode
+        Files.write(path1, (Iterable<? extends CharSequence>) path, StandardOpenOption.APPEND);  //Append mode
     }
 }
-
 
