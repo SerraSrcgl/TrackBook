@@ -14,5 +14,11 @@
       <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
       <jdbc-url>jdbc:oracle:thin:@db-oracle.pjwstk.edu.pl:1521:baza</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="trackReading" uuid="bafeea67-3fd2-425f-a8ce-e9bd867cfa7a">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/src/trackReading.db</jdbc-url>
+    </data-source>
   </component>
 </project>

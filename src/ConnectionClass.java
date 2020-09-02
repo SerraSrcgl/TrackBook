@@ -8,7 +8,7 @@ public class ConnectionClass {
 
         try{
             Class.forName("org.sqlite.JDBC");
-            Connection conn=DriverManager.getConnection("jdbc:sqlite:/Users/mehlikabilgicli/Desktop/BANK PROJECT/banka.db");
+            Connection conn=DriverManager.getConnection("jdbc:sqlite:/Users/serra/IntelliJIDEAProjects/TrackBook/src/trackReading.db");
             return conn;
 
         }catch(Exception e){
